@@ -14,12 +14,11 @@ const Portfolio = ({ activeColor,setActiveColor,setActiveSlide,project,isShowSid
         setActiveColor(active)
         setActiveSlide(true)
     };
-
     return (
         <>
                 <PortfolioStyled key={id} color={color} isShowSidebar={isShowSidebar} name={project.name}>
                     <div className="portfolio__page">
-                        <a href={link} target="_blank" rel="noopener noreferrer"><h1 className="portfolio__title">{name}</h1></a>
+                        <a href={link} target="_blank" rel="noopener noreferrer"><h1 className="portfolio__title">{name} <sup className="portfolio__titleCheck">(check out)</sup> </h1></a>
                         <div className="portfolio__technologies">
                             {technologies.map((technology)=>technology)}
                         </div>

@@ -17,8 +17,11 @@ export const PortfolioStyled = styled.div`
     &__title{
         color:${({color}) => color};
         transition:all .3s;
-        width:200px;
+        width:300px;
         height:50px;
+        &Check{
+        font-size:12px;
+        }
         &:hover{
         font-size:30px;
         }
