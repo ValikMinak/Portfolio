@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+body, p, h1, h2 {
+    margin: 0;
+    overflow: hidden;
+}
+
+a{
+    text-decoration:none;
+}
+
+@font-face {
+    font-family: 'Tokyo';
+    src: url('Fonts/nightinTokyo.woff') format('woff');
+}
+

@@ -1,0 +1,112 @@
+.js__one, .react > path, .redux > path, .styled__one, .styled__two, .sass > path, .bem > path {
+  transition: all 0.3s ease;
+}
+
+.js:hover {
+  transition: all 1s;
+}
+.js:hover .js__one {
+  fill: #FFD600;
+}
+
+.react:hover path {
+  fill: #80DEEA;
+}
+
+.redux:hover path {
+  fill: #764ABC;
+}
+
+.styled:hover .styled__one {
+  fill: #D972B1;
+}
+.styled:hover .styled__two {
+  fill: #E885C2;
+}
+
+.sass:hover path {
+  fill: #CF649A;
+}
+
+.bem:hover path {
+  fill: #000000;
+}
+
+.cloud-1 {
+  animation: animCloud-1 125s infinite;
+}
+
+.cloud-1-1 {
+  animation: animCloud-1 225s infinite;
+}
+
+.cloud-1-1-1 {
+  animation: animCloud-1 425s infinite;
+}
+
+.cloud-2 {
+  animation: animCloud-2 113s infinite;
+}
+
+.cloud-3 {
+  animation: animCloud-3 255s infinite;
+}
+
+.cloud-4 {
+  animation: animCloud-4 90s infinite;
+}
+
+.cloud-5 {
+  animation: animCloud-5 83s infinite;
+}
+
+.cloud-4-4 {
+  animation: animCloud-4 325s infinite;
+}
+
+.cloud-5-5 {
+  animation: animCloud-5 195s infinite;
+}
+
+@keyframes animCloud-1 {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(1500px);
+  }
+}
+@keyframes animCloud-2 {
+  0% {
+    transform: translateX(-400px);
+  }
+  100% {
+    transform: translateX(1200px);
+  }
+}
+@keyframes animCloud-3 {
+  0% {
+    transform: translateX(-1500px);
+  }
+  100% {
+    transform: translateX(1500px);
+  }
+}
+@keyframes animCloud-4 {
+  0% {
+    transform: translateX(-400px);
+  }
+  100% {
+    transform: translateX(1200px);
+  }
+}
+@keyframes animCloud-5 {
+  0% {
+    transform: translateX(-1400px);
+  }
+  100% {
+    transform: translateX(1200px);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
