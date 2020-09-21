@@ -11,6 +11,8 @@ export const SkillsStyled = styled.div`
   font-family: Tokyo , sans-serif;
   transition: all .3s;
   padding-right:${({ isShowSidebar })=>isShowSidebar?"0":"161px"};
+  opacity:0;
+  animation: animAppear 1.5s forwards;
   .skills{
     display: grid;
     grid-template-columns: 3fr 3fr 3fr 3fr;
@@ -22,4 +24,9 @@ export const SkillsStyled = styled.div`
     
     
   }
+  @keyframes animAppear {
+    to{
+    opacity:1;
+    }
+    }
   `

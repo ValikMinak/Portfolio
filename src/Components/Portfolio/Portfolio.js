@@ -17,7 +17,7 @@ const Portfolio = ({ activeColor,setActiveColor,setActiveSlide,project,isShowSid
 
     return (
         <>
-                <PortfolioStyled key={id} color={color} isShowSidebar={isShowSidebar}>
+                <PortfolioStyled key={id} color={color} isShowSidebar={isShowSidebar} name={project.name}>
                     <div className="portfolio__page">
                         <a href={link} target="_blank" rel="noopener noreferrer"><h1 className="portfolio__title">{name}</h1></a>
                         <div className="portfolio__technologies">

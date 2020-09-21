@@ -11,7 +11,7 @@ transition: all .3s;
 z-index:2;
 
 svg path{
-fill:${({ pathname })=>pathname==="/contacts"?"white":"#3F3F3F"};
+fill:${({ pathname })=>pathname==="/contacts"?"#D1D0D0":"#3F3F3F"};
 }
 `
 

@@ -53,15 +53,29 @@ export const PortfolioStyled = styled.div`
             a {
                 display:block;
                 background-color:${({color}) => color};
-                margin-top:5px;
-                width:8px;
-                height:8px;
+                margin-top:15px;
+                width:6px;
+                height:6px;
                 border-radius:50%;
                 transition:all .3s;
+                opacity:.5;
                 }
             .active{
-            opacity:.5;
-            transform:scale(1.5);
+            opacity:1;
+            transform:scale(2);
+            position:relative;
+            &::before{
+             content:'${({name})=>name}';
+             position: absolute;
+             right: 9px;
+             top: -3px;
+             height: 6px;
+             font-size: 7px;
+             border-radius: 30px;
+             background-color: ${({ color })=>color};
+             padding: 3px;
+            
+            }
                 }
             }
         &__text{

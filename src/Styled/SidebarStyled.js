@@ -4,7 +4,7 @@ export const SidebarStyled = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-right: 10px solid ${({ pathname })=>pathname==="/contacts"?"white":"#3F3F3F"};
+  border-right: 10px solid ${({ pathname })=>pathname==="/contacts"?"#D1D0D0":"#3F3F3F"};
   padding: 20px;
   transform:translateX(${({isShowSidebar}) => isShowSidebar ? "0" : "-137px"});
   transition:.3s;
@@ -23,12 +23,12 @@ export const SidebarStyled = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    color:${({ pathname })=>pathname==="/contacts"?"white":"#3F3F3F"};
+    color:${({ pathname })=>pathname==="/contacts"?"#D1D0D0":"#3F3F3F"};
     & svg{
     transition:1s;
     margin-bottom:10px;
     & path{
-            fill:${ ({ pathname }) =>pathname==="/contacts"?"white":"#3F3F3F"};
+            fill:${ ({ pathname }) =>pathname==="/contacts"?"#D1D0D0":"#3F3F3F"};
             }
     }
      &:hover{

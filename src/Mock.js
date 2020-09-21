@@ -1,4 +1,3 @@
-import {BEM, JS, REACT, Redux, Sass, Styled} from "./SVG";
 import React from "react";
 
 export const projects = [
@@ -7,7 +6,6 @@ export const projects = [
         id: 1,
         color: "#FFDF8A",
         link: "https://valikminak.github.io/PastaPizza/",
-        // technologies: [<JS key={key++}/>, <REACT key={key++}/>, <Redux key={key++}/>, <Styled key={key++}/>, <Sass key={key++}/>, <BEM key={key++}/>],
         text: "   Проект называется паста пицца. На первый всгляд обычный онлайн магазин по продаже товаров," +
             " но если вы перейдете в конструктор то увидете что там можно самому собрать пиццу из существвующих ингредиентов. " +
             "Так же можно выбрать размер порции, и количество заказа, все это будет помещено в корзину, где можно увидеть состав заказа," +
@@ -20,7 +18,6 @@ export const projects = [
         id: 2,
         color: "#4BBF6B",
         link: "https://valikminak.github.io/GroWitHead/",
-        // technologies: [<JS key={key++}/>, <REACT key={key++}/>, <Redux key={key++}/>, <Styled key={key++}/>, <Sass key={key++}/>, <BEM key={key++}/>],
         text: "      Приложение гровизхед было придумано мною в процессе обучения, " +
             "так как я много записываю в тетрадке новую информацию, и помом мне сложно ее структурировать ," +
             " то мне пришла в голову идея сделать такое приложение где можно было бы создавай разделы с изучаемым предметов, " +
