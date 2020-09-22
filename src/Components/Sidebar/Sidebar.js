@@ -6,7 +6,7 @@ import OpenCloseSidebar from "./OpenCloseSidebar/OpenCloseSidebar";
 import {ContactMe, Home, Portfolio, Skills} from "../../SVG";
 
 
-const Sidebar = ({isShowSidebar,setIsShowSidebar,activeColor,setActiveColor,activeSlide,setActiveSlide,location}) => {
+const Sidebar = ({isShowSidebar,setIsShowSidebar,activeColor,setActiveColor,activeSlide,setActiveSlide,location,activeLanguage}) => {
     const setActivePortfolio = () => {
         setActiveColor("#FFDF8A")
         setActiveSlide(true)
@@ -19,16 +19,16 @@ const Sidebar = ({isShowSidebar,setIsShowSidebar,activeColor,setActiveColor,acti
     return (
         <>
             <SidebarStyled isShowSidebar={isShowSidebar} activeColor={activeColor} pathname={pathname}>
-                <NavLink exact={true} activeClassName="active" onClick={setActive} to={'/'}><Home/>Home</NavLink>
+                <NavLink exact={true} activeClassName="active" onClick={setActive} to={'/'}><Home/>{activeLanguage==="ru"?"Домой":"Home"}</NavLink>
                 <NavLink activeClassName="active"
                          isActive={()=>{
                              if(activeSlide){
                                  return true
                              }
                          }}
-                         onClick={setActivePortfolio} to={`/portfolio/pastapizza`}><Portfolio/>Portfolio</NavLink>
-                <NavLink activeClassName="active" onClick={setActive} to={'/skills'}><Skills/>Skills</NavLink>
-                <NavLink activeClassName="active" onClick={setActive} to={'/contacts'}><ContactMe/>Contact Me</NavLink>
+                         onClick={setActivePortfolio} to={`/portfolio/pastapizza`}><Portfolio/>{activeLanguage==="ru"?"Портфолио":"Portfolio"}</NavLink>
+                <NavLink activeClassName="active" onClick={setActive} to={'/skills'}><Skills/>{activeLanguage==="ru"?"Навыки":"Skills"}</NavLink>
+                <NavLink activeClassName="active" onClick={setActive} to={'/contacts'}><ContactMe/>{activeLanguage==="ru"?"Контакты":"Contact Me"}</NavLink>
                 <OpenCloseSidebar callback={() => setIsShowSidebar(prev => !prev)} pathname={pathname} isShowSidebar={isShowSidebar}/>
             </SidebarStyled>
 

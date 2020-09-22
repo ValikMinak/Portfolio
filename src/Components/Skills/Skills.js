@@ -6,7 +6,7 @@ const size = 100
 let key=2342
 
 
-const Skills = ({isShowSidebar}) => {
+const Skills = ({isShowSidebar,activeLanguage}) => {
     const technologies = [<HTML key={key++} width={size} height={size}/>, <CSS key={key++} width={size} height={size}/>,<JSSkills key={key++} width={size} height={size}/>, <REACT key={key++} width={size} height={size}/>,
         <Redux key={key++} width={size} height={size}/>, <Styled key={key++} width={size} height={size}/>, <Sass key={key++} width={size} height={size}/>,
         <BEM key={key++} width={size} height={size}/>,
@@ -16,7 +16,9 @@ const Skills = ({isShowSidebar}) => {
 
     return (
         <SkillsStyled isShowSidebar={isShowSidebar}>
-            <h1>Skills</h1>
+            {activeLanguage==="ru"
+            ?<h1>Навыки</h1>
+            :<h1>Skills</h1>}
             <div className='skills'>
                 {technologies.map((technology) => technology)}
             </div>

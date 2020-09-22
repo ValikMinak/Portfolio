@@ -18,21 +18,22 @@ const App = ({location}) => {
     const [isShowSidebar, setIsShowSidebar] = useState(false);
     const [activeColor, setActiveColor] = useState(pizzaColor || growColor || tetrisColor || sudokuColor || "red");
     const [activeSlide, setActiveSlide] = useState(false)
+    const [activeLanguage, setActiveLanguage] = useState("en")
     return (
         <div className="app">
             <Sidebar isShowSidebar={isShowSidebar} setIsShowSidebar={setIsShowSidebar}
                      activeColor={activeColor} setActiveColor={setActiveColor}
-                     activeSlide={activeSlide} setActiveSlide={setActiveSlide}/>
+                     activeSlide={activeSlide} setActiveSlide={setActiveSlide} activeLanguage={activeLanguage}/>
             <Switch>
-                <Route path={'/'} render={() => <MainPage isShowSidebar={isShowSidebar}/>} exact/>
+                <Route path={'/'} render={() => <MainPage isShowSidebar={isShowSidebar} activeLanguage={activeLanguage} setActiveLanguage={setActiveLanguage} />} exact/>
                 {projects.map((project) =>
                     <Route key={project.id} path={`/portfolio/${project.name}`}
                            render={() => <Portfolio project={project} isShowSidebar={isShowSidebar}
                                                     setActiveSlide={setActiveSlide} activeColor={activeColor}
-                                                    setActiveColor={setActiveColor}/>}/>
+                                                    setActiveColor={setActiveColor} activeLanguage={activeLanguage}/>}/>
                 )}
-                <Route path={'/skills'} render={() => <Skills isShowSidebar={isShowSidebar}/>}/>
-                <Route path={'/contacts'} component={ContactMe}/>
+                <Route path={'/skills'} render={() => <Skills isShowSidebar={isShowSidebar} activeLanguage={activeLanguage}/>}/>
+                <Route path={'/contacts'} render={()=><ContactMe activeLanguage={activeLanguage}/>}/>
             </Switch>
         </div>
     );
