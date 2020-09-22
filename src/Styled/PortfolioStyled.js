@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 
 export const PortfolioStyled = styled.div`
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 2fr 8fr 2fr;
   align-items: center;
-  flex-direction:column;
+  margin-left:120px;
   width: 100vw;
   height: 100vh;
   font-family: Tokyo , sans-serif ;
@@ -14,29 +14,53 @@ export const PortfolioStyled = styled.div`
   animation: animAppear 1.5s forwards;
   opacity:0;
   .portfolio{
-    &__title{
-        color:${({color}) => color};
-        transition:all .3s;
-        width:300px;
-        height:50px;
-        &Check{
-        font-size:12px;
-        }
-        &:hover{
-        font-size:30px;
-        }
-        }
         &__page{
         display: flex;
         align-items: center;
         flex-direction:column;
-        }
+        
+            &Project{
+                transition:all 1s;
+                &:hover{
+                 transform:scale(1.02);
+               }
+                & h1{
+                        color:${({color}) => color};
+                        height:50px;
+                        display:block;
+                        text-align:center;
+                        }
+                 & img{
+                     width:100%;
+                     height:100%;
+                     border-radius:30px;
+                    }
+                }
+                & .tetris {
+                text-align:center;
+                font-size:32px;
+                    & :nth-child(1){
+                        color:#E34E4E;}
+                    & :nth-child(2){
+                        color:#30D338;}
+                    & :nth-child(3){
+                        color:#DFD924;}
+                    & :nth-child(4){
+                        color:#245FDF;}
+                    & :nth-child(5){
+                        color:#DFAD24;}
+                    & :nth-child(6){
+                        color:#50E3E6;}
+                }
+            }
         &__technologies{
             display:grid;
-            grid-template-columns: 4fr 4fr 4fr;
-            grid-row-gap:50px;
-            grid-column-gap:80px;
-            margin-top:50px;
+            grid-template-columns: repeat(2fr);
+            grid-row-gap:0px;
+            align-self:start;
+            color:${({color}) => color};
+            margin-top:${({ isShowSidebar })=>isShowSidebar?"150px":"135px"};
+            transition:all .3s;
   
   span {
         display: flex;
@@ -96,6 +120,7 @@ export const PortfolioStyled = styled.div`
             justify-content: center;
             align-items: center;
             position:relative;
+            margin-top:100px;
             width:50px;
             height:50px;
             border-radius:50%;
