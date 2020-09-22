@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.a4de08db.chunk.css",
+    "main.js": "/Portfolio/static/js/main.52ace24d.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.52ace24d.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.e440ee5a.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.e440ee5a.js.map",
+    "static/js/2.0cbabee3.chunk.js": "/Portfolio/static/js/2.0cbabee3.chunk.js",
+    "static/js/2.0cbabee3.chunk.js.map": "/Portfolio/static/js/2.0cbabee3.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.7f06876f0c5a59a03a21a97de3119cf5.js": "/Portfolio/precache-manifest.7f06876f0c5a59a03a21a97de3119cf5.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/main.a4de08db.chunk.css.map": "/Portfolio/static/css/main.a4de08db.chunk.css.map",
+    "static/js/2.0cbabee3.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.0cbabee3.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Portfolio/static/media/nightinTokyo.09a89c03.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e440ee5a.js",
+    "static/js/2.0cbabee3.chunk.js",
+    "static/css/main.a4de08db.chunk.css",
+    "static/js/main.52ace24d.chunk.js"
+  ]
+}
