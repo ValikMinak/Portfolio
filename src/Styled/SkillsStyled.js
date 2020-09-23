@@ -8,6 +8,7 @@ export const SkillsStyled = styled.div`
   flex-direction:column;
   width: 100vw;
   height: 100vh;
+  padding-bottom:100px;
   font-family: Tokyo , sans-serif;
   transition: all .3s;
   padding-right:${({ isShowSidebar })=>isShowSidebar?"0":"161px"};

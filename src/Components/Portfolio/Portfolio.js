@@ -5,41 +5,67 @@ import {BEM, JS, REACT, ReactHooks, Redux, Sass, Styled, Typescript} from "../..
 import {projects} from "../../Mock";
 
 let key = 100;
-const size = "70"
+const size = "70";
 const tetris = <div className="tetris">
-    <span>t</span><span>e</span><span>t</span><span>r</span><span>i</span><span>s</span></div>
+    <span>t</span><span>e</span><span>t</span><span>r</span><span>i</span><span>s</span></div>;
 
 
-const Portfolio = ({activeColor, setActiveColor, setActiveSlide, project, isShowSidebar, activeLanguage}) => {
-    const technologiesPastaPizza = [<JS key={key++} color={activeColor} width={size} height={size}/>,
-        <REACT key={key++} color={activeColor} width={size} height={size}/>,
-        <Redux key={key++} color={activeColor} width={size} height={size}/>,
-        <Styled key={key++} color={activeColor} width={size} height={size}/>,
-        <Sass key={key++} color={activeColor} width={size} height={size}/>,
-        <BEM key={key++} color={activeColor} width={size} height={size}/>]
-    const technologiesGroWitHead = [<JS key={key++} color={activeColor} width={size} height={size}/>,
-        <REACT key={key++} color={activeColor} width={size} height={size}/>,
-        <ReactHooks key={key++} color={activeColor} width={size} height={size}/>,
-        <Styled key={key++} color={activeColor} width={size} height={size}/>,
-        <Sass key={key++} color={activeColor} width={size} height={size}/>,
-        <BEM key={key++} color={activeColor} width={size} height={size}/>]
-    const technologiesTetris = [<JS key={key++} color={activeColor} width={size} height={size}/>,
-        <REACT key={key++} color={activeColor} width={size} height={size}/>,
-        <ReactHooks key={key++} color={activeColor} width={size} height={size}/>,
-        <Styled key={key++} color={activeColor} width={size} height={size}/>,
-        <Sass key={key++} color={activeColor} width={size} height={size}/>,
-        <BEM key={key++} color={activeColor} width={size} height={size}/>]
-    const technologiesSudoku = [<JS key={key++} color={activeColor} width={size} height={size}/>,
-        <REACT key={key++} color={activeColor} width={size} height={size}/>,
-        <ReactHooks key={key++} color={activeColor} width={size} height={size}/>,
-        <Styled key={key++} color={activeColor} width={size} height={size}/>,
-        <Typescript key={key++} color={activeColor} width={size} height={size}/>,
-        <BEM key={key++} color={activeColor} width={size} height={size}/>]
+const Portfolio = ({ setActiveColor, setActiveSlide, project, isShowSidebar, activeLanguage,history }) => {
+
     const {name, id, color, link, image, text} = project;
+    const technologiesPastaPizza = [<JS key={key++} color={color} width={size} height={size}/>,
+        <REACT key={key++} color={color} width={size} height={size}/>,
+        <Redux key={key++} color={color} width={size} height={size}/>,
+        <Styled key={key++} color={color} width={size} height={size}/>,
+        <Sass key={key++} color={color} width={size} height={size}/>,
+        <BEM key={key++} color={color} width={size} height={size}/>];
+    const technologiesGroWitHead = [<JS key={key++} color={color} width={size} height={size}/>,
+        <REACT key={key++} color={color} width={size} height={size}/>,
+        <ReactHooks key={key++} color={color} width={size} height={size}/>,
+        <Styled key={key++} color={color} width={size} height={size}/>,
+        <Sass key={key++} color={color} width={size} height={size}/>,
+        <BEM key={key++} color={color} width={size} height={size}/>];
+    const technologiesTetris = [<JS key={key++} color={color} width={size} height={size}/>,
+        <REACT key={key++} color={color} width={size} height={size}/>,
+        <ReactHooks key={key++} color={color} width={size} height={size}/>,
+        <Styled key={key++} color={color} width={size} height={size}/>,
+        <Sass key={key++} color={color} width={size} height={size}/>,
+        <BEM key={key++} color={color} width={size} height={size}/>];
+    const technologiesSudoku = [<JS key={key++} color={color} width={size} height={size}/>,
+        <REACT key={key++} color={color} width={size} height={size}/>,
+        <ReactHooks key={key++} color={color} width={size} height={size}/>,
+        <Styled key={key++} color={color} width={size} height={size}/>,
+        <Typescript key={key++} color={color} width={size} height={size}/>,
+        <BEM key={key++} color={color} width={size} height={size}/>];
 
     const setActive = (active) => {
-        setActiveColor(active)
+        setActiveColor(active);
         setActiveSlide(true)
+    };
+    const changeSlide = (e) => {
+        let activeProjectIndex = projects.map((el)=> el.name).indexOf(name);
+            if (e.deltaY > 0) {
+                if(activeProjectIndex<projects.length-1){
+                    activeProjectIndex++;
+                    history.push(`/portfolio/${projects[activeProjectIndex].name}`)
+                    setActiveColor(projects[activeProjectIndex].color)
+                }else {
+                    activeProjectIndex = 0;
+                    history.push(`/portfolio/${projects[activeProjectIndex].name}`)
+                    setActiveColor(projects[activeProjectIndex].color)
+                }
+            }
+            if (e.deltaY < 0) {
+               if(activeProjectIndex>0){
+                   activeProjectIndex--;
+                   history.push(`/portfolio/${projects[activeProjectIndex].name}`)
+                   setActiveColor(projects[activeProjectIndex].color)
+               }else {
+                   activeProjectIndex = projects.length - 1;
+                   history.push(`/portfolio/${projects[activeProjectIndex].name}`)
+                   setActiveColor(projects[activeProjectIndex].color)
+               }
+            }
     };
     return (
         <>
@@ -56,11 +82,11 @@ const Portfolio = ({activeColor, setActiveColor, setActiveSlide, project, isShow
                 <div className="portfolio__page">
                     <a href={link} target="_blank" rel="noopener noreferrer" className="portfolio__pageProject">
                         {name === "tetris" ? tetris : <h1>{name}</h1>}
-                        <img src={image} alt="Logo"/>
+                        <img src={image} alt="Logo" onWheel={changeSlide}/>
                     </a>
-                        <p className="portfolio__text">
-                            {activeLanguage === "ru" ? text.ru : text.en}
-                        </p>
+                    <p className="portfolio__text">
+                        {activeLanguage === "ru" ? text.ru : text.en}
+                    </p>
                 </div>
                 <div className="portfolio__slider">
                     {projects.map(({color, id, name}) => <NavLink onClick={() => setActive(color)}

@@ -75,6 +75,7 @@ export const PortfolioStyled = styled.div`
         display:flex;
         flex-direction:column;
         position:absolute;
+        width:20px;
         top:50%;
         right:20px;
             a {
