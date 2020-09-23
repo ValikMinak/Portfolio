@@ -1,13 +1,28 @@
 import React from 'react';
 import {SkillsStyled} from "../../Styled/SkillsStyled";
-import {BEM, CSS, Figma, Git, HTML, JSSkills, Material, REACT, Redux, RestApi, Sass, Styled, WebStorm} from "../../SVG";
+import {
+    BEM,
+    CSS,
+    Figma,
+    Git,
+    HTML,
+    JSSkills,
+    Material,
+    REACT,
+    Redux,
+    RestApi,
+    Sass,
+    Styled,
+    Typescript,
+    WebStorm
+} from "../../SVG";
 
 const size = 100
 let key=2342
 
 
 const Skills = ({isShowSidebar,activeLanguage}) => {
-    const technologies = [<HTML key={key++} width={size} height={size}/>, <CSS key={key++} width={size} height={size}/>,<JSSkills key={key++} width={size} height={size}/>, <REACT key={key++} width={size} height={size}/>,
+    const technologies = [<HTML key={key++} width={size} height={size}/>, <CSS key={key++} width={size} height={size}/>,<JSSkills key={key++} width={size} height={size}/>,<Typescript  key={key++} width={size} height={size}/>, <REACT key={key++} width={size} height={size}/>,
         <Redux key={key++} width={size} height={size}/>, <Styled key={key++} width={size} height={size}/>, <Sass key={key++} width={size} height={size}/>,
         <BEM key={key++} width={size} height={size}/>,
         <RestApi key={key++} width={size} height={size}/>,

@@ -5,15 +5,11 @@ export const projects = [
         id: 1,
         color: "#FFDF8A",
         link: "https://valikminak.github.io/PastaPizza/",
-        image:"https://res.cloudinary.com/minak/image/upload/v1600768041/Portfolio/pizza_op047g.png",
+        image:"https://res.cloudinary.com/minak/image/upload/v1600846968/Portfolio/pizza_vbm45m.png",
         text:{
-            ru: "   Проект называется паста пицца. На первый всгляд обычный онлайн магазин по продаже товаров," +
-                " но если вы перейдете в конструктор то увидете что там можно самому собрать пиццу из существвующих ингредиентов. " +
-                "Так же можно выбрать размер порции, и количество заказа, все это будет помещено в корзину, где можно увидеть состав заказа," +
-                " добавки к заказу и состав пиццы собранной на конструкторе. Так же все заказы суммируются и внизу можно увидеть сумму всех заказовю." +
-                " Мне пришла в голову эта идея, потому что не всегда можно найти в пиццерии нужные комбинации продуктов. Пицца это такое блюдо ," +
-                " которое сделано из остатков пищи, по этому четкого рецепта нет, и это приложение предлагает  полную свободу действий в выборе пиццы для клиента",
-            en:"The growwithhead app was invented by me during the learning process"
+            ru: "\n" +
+                " На первый всгляд обычный онлайн магазин, для заказа продуктов, где можно выбрать размер порции и количество едениц. Одного правильного рецепта для пиции не существует, по этому на сайте есть конструктор пицци, где можно самому собрать пиццу из существвующих ингредиентов.",
+            en:"At first glance, a regular online store for ordering products, where you can choose the serving size and the number of units. There is no one correct recipe for pizza, so there is a pizza maker on the site, where you can assemble pizza yourself from existing ingredients."
         }
     },
     {
@@ -23,13 +19,9 @@ export const projects = [
         link: "https://valikminak.github.io/GroWitHead/",
         image:"https://res.cloudinary.com/minak/image/upload/v1600768041/Portfolio/growithead_umuaex.png",
         text: {
-            ru:"      Приложение гровизхед было придумано мною в процессе обучения, " +
-            "так как я много записываю в тетрадке новую информацию, и помом мне сложно ее структурировать ," +
-            " то мне пришла в голову идея сделать такое приложение где можно было бы создавай разделы с изучаемым предметов, " +
-            "затем подразделы с темами, и блоки с текстом описывающий эты темы. Так человек будет иметь быстрый доступ к своим заметкам, " +
-            "которые он структурирует по разделам, и опишет каждый. Так же приложение туду создано на основе приложения трелло, " +
-            "оно поможет планировать обучение и не расспыляться, изучая новую тему.К этому приложению планирую написать бекенд",
-            en:"The growwithhead app was invented by me during the learning process,"
+            ru:"\n" +
+                "В процессе обучения человеку приходится записывать много информации в блокнот. Но groWitHead это больше чем блокнот. Здесь вы можете создавать папки с отдельными дисциплинами, которые можно разбить по категориям, в которых можно добавлять блоки текста. Также в приложении есть планировщик задач.В будущем планирую написть для него бекенд.",
+            en:"In the process of learning, a person has to write a lot of information into a notebook, but groWitHead is more than a notebook. Here you can create folders with individual disciplines that can be categorized into which blocks of text can be added. There is also a task scheduler in the application. In the future I plan to write a backend for it."
         }
     },
     {
@@ -39,13 +31,8 @@ export const projects = [
         link: "https://valikminak.github.io/Tetris/",
         image:"https://res.cloudinary.com/minak/image/upload/v1600768041/Portfolio/tetris_afpyyl.png",
         text: {
-            ru:"      Приложение гровизхед было придумано мною в процессе обучения, " +
-            "так как я много записываю в тетрадке новую информацию, и помом мне сложно ее структурировать ," +
-            " то мне пришла в голову идея сделать такое приложение где можно было бы создавай разделы с изучаемым предметов, " +
-            "затем подразделы с темами, и блоки с текстом описывающий эты темы. Так человек будет иметь быстрый доступ к своим заметкам, " +
-            "которые он структурирует по разделам, и опишет каждый. Так же приложение туду создано на основе приложения трелло, " +
-            "оно поможет планировать обучение и не расспыляться, изучая новую тему. К этому приложению планирую написать бекенд",
-            en:"since I write down a lot of new information in a notebook, and it is difficult for me to help structure it,"
+            ru:"Тетрис называют дзен-игрой: в ней не нужно ни с кем воевать, не нужно никуда бежать. Все фигуры, которые тебе удалось расположить красиво и правильно, сгорают. Игра может быть очень долгой, а может оборваться от случайной ошибки.",
+            en:"Tetris is called a Zen game: you don't need to fight with anyone, you don't need to run anywhere. All the figures that you managed to arrange nicely and correctly burn out. The game can be very long, or it can be cut short by an accidental mistake."
         }
     },
     {
@@ -55,13 +42,9 @@ export const projects = [
         link: "https://valikminak.github.io/Sudoku/",
         image:"https://res.cloudinary.com/minak/image/upload/v1600768041/Portfolio/sudoku_pi8iyc.png",
         text: {
-            ru:"      Приложение гровизхед было придумано мною в процессе обучения, " +
-            "так как я много записываю в тетрадке новую информацию, и помом мне сложно ее структурировать ," +
-            " то мне пришла в голову идея сделать такое приложение где можно было бы создавай разделы с изучаемым предметов, " +
-            "затем подразделы с темами, и блоки с текстом описывающий эты темы. Так человек будет иметь быстрый доступ к своим заметкам, " +
-            "которые он структурирует по разделам, и опишет каждый. Так же приложение туду создано на основе приложения трелло, " +
-            "оно поможет планировать обучение и не расспыляться, изучая новую тему. К этому приложению планирую написать бекенд",
-            en:"then I came up with the idea to make such an application where you could create a section with the subjects studied,"
+            ru:"\n" +
+                " Если перевести с японского языка, то судоку означает: «цифра, стоящая отдельно». Некоторые называют игру «магическим квадратом». Число комбинаций в этой игре состаляет 47 784 725 839 872 000 = (9!)³.",
+            en:"Translated from Japanese, Sudoku means \"a figure standing alone.\" Some people call the game \"magic square\". The number of combinations in this game is 47 784 725 839 872 000 = (9!) ³."
         }
     }
 ]

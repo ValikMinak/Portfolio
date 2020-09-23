@@ -33,7 +33,7 @@ const App = ({location}) => {
                                                     setActiveColor={setActiveColor} activeLanguage={activeLanguage}/>}/>
                 )}
                 <Route path={'/skills'} render={() => <Skills isShowSidebar={isShowSidebar} activeLanguage={activeLanguage}/>}/>
-                <Route path={'/contacts'} render={()=><ContactMe activeLanguage={activeLanguage}/>}/>
+                <Route path={'/contacts'} render={()=><ContactMe isShowSidebar={isShowSidebar} activeLanguage={activeLanguage}/>}/>
             </Switch>
         </div>
     );

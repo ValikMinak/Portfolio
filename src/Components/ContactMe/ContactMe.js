@@ -3,15 +3,15 @@ import {ContactMeStyled} from "../../Styled/ContactMeStyled";
 import {Link} from "react-router-dom";
 
 
-const ContactMe = ({ activeLanguage }) => {
+const ContactMe = ({ activeLanguage,isShowSidebar }) => {
     return (
-        <ContactMeStyled>
+        <ContactMeStyled isShowSidebar={isShowSidebar}>
             <div className="contact__title">
-                <Link to={"/contacts"} >{activeLanguage==="ru"?"Локация":"Location"}: relocate/remote </Link>
+                <Link to={"/contacts"} >{activeLanguage==="ru"?"Локация: переезд/удаленно":"Location: relocate/remote"}</Link>
                 <Link to={"/contacts"}>{activeLanguage==="ru"?"Телефон":"Phone"}: 068-588-49-68</Link>
                 <a href={"mailto:valikminak@gmail.com"}>e-mail</a>
-                <a target="_blank" rel="noopener noreferrer" href={"https://www.instagram.com/valikminak/"}>instagram</a>
                 <a target="_blank" rel="noopener noreferrer" href={"https://github.com/ValikMinak"}>github</a>
+                <a target="_blank" rel="noopener noreferrer" href={"https://www.instagram.com/valikminak/"}>instagram</a>
                 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/valikminak/">linkedIn</a>
             </div>
             <div className="contact__image">

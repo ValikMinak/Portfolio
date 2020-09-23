@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import {Contact} from "../SVG/ContactMe";
 
 export const ContactMeStyled = styled.div`
 width:100%;
@@ -24,7 +23,10 @@ color:white;
 &__title{
 display:flex;
 flex-direction:column;
-width:400px;
+width:100%;
+margin-left:${({ isShowSidebar })=>isShowSidebar?"385px":"110px"};
+font-size:24px;
+transition: all .3s;
 }
 &__image{
 align-self:start;

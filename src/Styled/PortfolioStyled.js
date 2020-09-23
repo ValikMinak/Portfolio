@@ -107,31 +107,10 @@ export const PortfolioStyled = styled.div`
             }
         &__text{
             width:500px;
-            height:200px;
-            position:absolute;
-            left:60px;
-            top:0px;
+            margin-top:40px;
             font-size:12px;
-            opacity:0;
-            transition:.3s;
+            color:${({ color })=>color};
         }
-        &__about{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position:relative;
-            margin-top:100px;
-            width:50px;
-            height:50px;
-            border-radius:50%;
-            background-color:${({color}) => color};
-            font-size:22px;
-            cursor:pointer;
-            &:hover .portfolio__text{
-            opacity:1;
-            }
-            }
-            
     }
     @keyframes animAppear {
     to{

@@ -16,7 +16,7 @@ const MainPage = ({isShowSidebar, activeLanguage, setActiveLanguage}) => {
                     <NunchucksLeft/>
                     {activeLanguage === "en"
                         ? <h3 className="mainPage__title">Junior React Developer</h3>
-                        : <h3 className="mainPage__title">Начинающай Реакт Разработчик</h3>}
+                        : <h3 className="mainPage__title">Начинающий Реакт Разработчик</h3>}
                     <Sword/>
                     <NunchucksRight/>
                 </div>

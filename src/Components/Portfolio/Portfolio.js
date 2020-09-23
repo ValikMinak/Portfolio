@@ -58,12 +58,9 @@ const Portfolio = ({activeColor, setActiveColor, setActiveSlide, project, isShow
                         {name === "tetris" ? tetris : <h1>{name}</h1>}
                         <img src={image} alt="Logo"/>
                     </a>
-                    <div className="portfolio__about">
-                        ?
                         <p className="portfolio__text">
                             {activeLanguage === "ru" ? text.ru : text.en}
                         </p>
-                    </div>
                 </div>
                 <div className="portfolio__slider">
                     {projects.map(({color, id, name}) => <NavLink onClick={() => setActive(color)}
