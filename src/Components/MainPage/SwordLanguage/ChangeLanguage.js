@@ -7,15 +7,22 @@ const ChangeLanguageStyled = styled.div`
 width:200px;
 height:100px;
 position:absolute;
-right:70px;
-top:100px;
+right:100px;
+top:75px;
 cursor:pointer;
 transition: all .3s;
 z-index:2;
 
-svg {
-
-}
+@media (max-width: 820px) {
+   right:350px;
+    }
+    @media (max-width: 540px) {
+    right:0px;
+    }
+    @media (max-width: 420px) {
+   right:50px;
+   top:25px;
+    }
 `
 
 const ChangeLanguage = ({ callback,activeLanguage }) => {

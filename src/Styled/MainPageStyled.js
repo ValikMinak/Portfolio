@@ -30,6 +30,7 @@ export const MainPageStyled=styled.div`
     justify-content: center;
     align-items: center;
     margin-top:20px;
+    width:360px;
   }
 }
 @keyframes animAppear {
@@ -37,4 +38,16 @@ export const MainPageStyled=styled.div`
     opacity:1;
     }
     }
+      @media (max-width: 820px) {
+        align-items: flex-start;
+    }
+   @media (max-width: 420px) {
+        align-items: flex-end;
+        .mainPage{
+        &__position {
+        font-size:12px;
+        }
+        }
+    }
+   
 `

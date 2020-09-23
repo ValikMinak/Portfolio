@@ -30,4 +30,13 @@ export const SkillsStyled = styled.div`
     opacity:1;
     }
     }
+    @media (max-width: 420px) {
+    .skills{
+    width:300px;
+    margin-right:120px;
+    grid-template-columns: 4fr 4fr 4fr;
+    grid-row-gap:10px;
+    grid-column-gap:10px;
+    }
+    }
   `

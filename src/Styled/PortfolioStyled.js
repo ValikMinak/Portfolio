@@ -10,7 +10,7 @@ export const PortfolioStyled = styled.div`
   height: 100vh;
   font-family: Tokyo , sans-serif ;
   transition: all .3s;
-  padding-right:${({ isShowSidebar })=>isShowSidebar?"0":"161px"};
+  padding-right:${({isShowSidebar}) => isShowSidebar ? "0" : "161px"};
   animation: animAppear 1.5s forwards;
   opacity:0;
   .portfolio{
@@ -18,9 +18,9 @@ export const PortfolioStyled = styled.div`
         display: flex;
         align-items: center;
         flex-direction:column;
-        
             &Project{
                 transition:all 1s;
+                width:500px;
                 &:hover{
                  transform:scale(1.02);
                }
@@ -53,14 +53,17 @@ export const PortfolioStyled = styled.div`
                         color:#50E3E6;}
                 }
             }
-        &__technologies{
+        &__technologies{     
             display:grid;
-            grid-template-columns: repeat(2fr);
-            grid-row-gap:0px;
             align-self:start;
+            grid-template-columns: repeat(2fr);      
             color:${({color}) => color};
-            margin-top:${({ isShowSidebar })=>isShowSidebar?"150px":"135px"};
+            margin-top:${({isShowSidebar}) => isShowSidebar ? "150px" : "135px"};
             transition:all .3s;
+               &List{
+            display:grid;
+            grid-template-columns: repeat(2fr); 
+                }
   
   span {
         display: flex;
@@ -75,15 +78,15 @@ export const PortfolioStyled = styled.div`
         display:flex;
         flex-direction:column;
         position:absolute;
-        width:20px;
+        width:30px;
         top:50%;
         right:20px;
             a {
                 display:block;
                 background-color:${({color}) => color};
                 margin-top:15px;
-                width:6px;
-                height:6px;
+                width:10px;
+                height:10px;
                 border-radius:50%;
                 transition:all .3s;
                 opacity:.5;
@@ -93,14 +96,15 @@ export const PortfolioStyled = styled.div`
             transform:scale(2);
             position:relative;
             &::before{
-             content:'${({name})=>name}';
+             content:'${({name}) => name}';
              position: absolute;
              right: 9px;
-             top: -3px;
+             top: -1px;
              height: 6px;
              font-size: 7px;
-             border-radius: 30px;
-             background-color: ${({ color })=>color};
+             border-top-left-radius: 30px;
+             border-bottom-left-radius: 30px;
+             background-color: ${({color}) => color};
              padding: 3px;
             
             }
@@ -108,9 +112,9 @@ export const PortfolioStyled = styled.div`
             }
         &__text{
             width:500px;
-            margin-top:40px;
+            margin-top:80px;
             font-size:12px;
-            color:${({ color })=>color};
+            color:${({color}) => color};
         }
     }
     @keyframes animAppear {
@@ -118,5 +122,57 @@ export const PortfolioStyled = styled.div`
     opacity:1;
     }
     }
-  
+    
+    @media (max-width: 1040px) {
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction:column;
+    .portfolio{
+         &__technologies{
+          justify-items:center;
+          align-self:flex-end;
+          &List{
+          display:flex; 
+                }
+            }
+         &__slider{
+            position:static;
+            justify-content:space-between;
+            flex-direction:row;
+            width:360px;
+             }
+    }
+  }
+      @media (max-width: 420px) {
+            align-items:flex-end;
+            margin-left:20px;
+            font-size:10px;
+            padding-bottom:100px;
+            .portfolio{
+             &__technologies{
+                    &List{
+                    display:grid;
+                    grid-template-columns: 4fr 4fr 4fr; 
+                    grid-column-gap:20px;
+                    grid-row-gap:20px;
+                    margin-right:40px;
+                }
+            }
+             &__slider{
+                justify-content:space-between;
+                width:200px;
+                align-self: flex-start;
+                         }
+            &__text{
+            width:360px;
+            }
+             &__page{
+                &Project{
+                    width:300px;
+                    & img{
+                         width:100%;
+                    }
+                   
+                 }
+            }
 `

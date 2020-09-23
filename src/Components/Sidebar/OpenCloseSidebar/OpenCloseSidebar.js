@@ -13,6 +13,9 @@
     svg path{
     fill:${({ pathname })=>pathname==="/contacts"?"#D1D0D0":"#3F3F3F"};
     }
+       @media (max-width: 420px) {
+         top:0px;
+    }
     `
 
     const OpenCloseSidebar = ({ callback,isShowSidebar,pathname }) => {

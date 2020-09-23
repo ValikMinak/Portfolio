@@ -74,10 +74,12 @@ const Portfolio = ({ setActiveColor, setActiveSlide, project, isShowSidebar, act
                     {activeLanguage === "ru"
                         ? <h3>Технологии</h3>
                         : <h3>Technologies</h3>}
+                        <div className="portfolio__technologiesList">
                     {name === "pastapizza" && technologiesPastaPizza.map((technology) => technology)}
                     {name === "growithead" && technologiesGroWitHead.map((technology) => technology)}
                     {name === "tetris" && technologiesTetris.map((technology) => technology)}
                     {name === "sudoku" && technologiesSudoku.map((technology) => technology)}
+                        </div>
                 </div>
                 <div className="portfolio__page">
                     <a href={link} target="_blank" rel="noopener noreferrer" className="portfolio__pageProject">

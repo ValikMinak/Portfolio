@@ -37,4 +37,17 @@ align-self:start;
     opacity:1;
     }
     }
+    
+        @media (max-width: 420px) {
+        grid-template-columns:12fr;
+        .contact{
+        &__title{
+        font-size:16px;
+        margin-top:200px;
+        }
+        &__image{
+        align-self:center;
+        }
+        }
+        }
 `
