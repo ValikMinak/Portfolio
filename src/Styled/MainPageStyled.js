@@ -30,7 +30,10 @@ export const MainPageStyled=styled.div`
     justify-content: center;
     align-items: center;
     margin-top:20px;
-    width:360px;
+    width:${({ activeLanguage })=>activeLanguage==="ru"?"400px":"300px"};
+    & h3{
+    width:100%;
+    }
   }
 }
 @keyframes animAppear {

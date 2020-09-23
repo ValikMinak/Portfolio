@@ -5,7 +5,7 @@ import ChangeLanguage from "./SwordLanguage/ChangeLanguage";
 
 const MainPage = ({isShowSidebar, activeLanguage, setActiveLanguage}) => {
     return (
-        <MainPageStyled isShowSidebar={isShowSidebar}>
+        <MainPageStyled isShowSidebar={isShowSidebar} activeLanguage={activeLanguage}>
             <div className="mainPage">
                 <div className="mainPage__logo"></div>
                 {activeLanguage === "en"

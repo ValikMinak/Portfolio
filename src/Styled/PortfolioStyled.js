@@ -94,18 +94,20 @@ export const PortfolioStyled = styled.div`
             .active{
             opacity:1;
             transform:scale(2);
+            border-top-left-radius:0px;
+            border-bottom-left-radius:0px;
             position:relative;
             &::before{
              content:'${({name}) => name}';
              position: absolute;
              right: 9px;
-             top: -1px;
+             top: 0px;
              height: 6px;
              font-size: 7px;
              border-top-left-radius: 30px;
              border-bottom-left-radius: 30px;
              background-color: ${({color}) => color};
-             padding: 3px;
+             padding: 2px;
             
             }
                 }
