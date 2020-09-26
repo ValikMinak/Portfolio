@@ -150,27 +150,41 @@ export const PortfolioStyled = styled.div`
             margin-left:20px;
             font-size:10px;
             padding-bottom:100px;
+            padding-right:200px;
             .portfolio{
              &__technologies{
+             margin-top: 20px;
                     &List{
                     display:grid;
                     grid-template-columns: 4fr 4fr 4fr; 
                     grid-column-gap:20px;
                     grid-row-gap:20px;
-                    margin-right:40px;
+                    margin-right:70px;
+                    & svg {
+                    width:50px;
+                    height:50px;
+                    }
                 }
             }
              &__slider{
-                justify-content:space-between;
                 width:200px;
-                align-self: flex-start;
+                margin-right:30px;
+                a{ 
+                margin-top:0px;
+                }
                          }
             &__text{
-            width:360px;
+            width:310px;
+            margin-top:25px;
+            font-size:10px;
             }
              &__page{
+             h1{
+             height:20px;
+             }
                 &Project{
                     width:300px;
+                    height: 175px;
                     & img{
                          width:100%;
                     }

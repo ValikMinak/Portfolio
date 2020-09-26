@@ -10,6 +10,7 @@ export const MainPageStyled=styled.div`
   font-family: Tokyo ,sans-serif;
   transition: all .3s;
   padding-right:${({ isShowSidebar })=>isShowSidebar?"0":"161px"};
+  // padding-right:${({ isShowSidebar })=>isShowSidebar?"0":"161px"};
   opacity:0;
   animation: animAppear 1.5s forwards;
   .mainPage {
@@ -45,10 +46,22 @@ export const MainPageStyled=styled.div`
         align-items: flex-start;
     }
    @media (max-width: 420px) {
+        padding-right:0;
         align-items: flex-end;
         .mainPage{
+        padding-right:220px;
+        & h1{
+        font-size:18px;
+        }
+        &__logo {
+    width: 180px;
+    height: 180px;
+    margin-bottom:40px;
+    }
         &__position {
         font-size:12px;
+        width:230px;
+        margin-top:0;
         }
         }
     }

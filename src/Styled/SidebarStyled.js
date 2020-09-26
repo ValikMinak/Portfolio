@@ -44,5 +44,8 @@ export const SidebarStyled = styled.div`
   & :nth-child(1){
     margin-top: 10px;
   }
+       @media (max-width: 420px) {
+        background-color:white;
+    }
 
 `

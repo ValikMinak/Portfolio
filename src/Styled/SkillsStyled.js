@@ -31,6 +31,7 @@ export const SkillsStyled = styled.div`
     }
     }
     @media (max-width: 420px) {
+    padding-right:180px;
     .skills{
     width:300px;
     margin-right:120px;

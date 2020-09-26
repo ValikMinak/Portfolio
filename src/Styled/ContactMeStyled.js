@@ -39,14 +39,22 @@ align-self:start;
     }
     
         @media (max-width: 420px) {
-        grid-template-columns:12fr;
+        display:flex;
+        flex-direction:column-reverse;
         .contact{
         &__title{
         font-size:16px;
-        margin-top:200px;
+        grid-row: div 2;
+        margin-left:110px;
+        margin-bottom:150px;
         }
         &__image{
         align-self:center;
+        grid-row: div 1;
+        width:300px;
+        & img{
+        width:100%;
+        }
         }
         }
         }

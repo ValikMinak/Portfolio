@@ -20,8 +20,12 @@ z-index:2;
     right:0px;
     }
     @media (max-width: 420px) {
-   right:50px;
+   right:-40px;
    top:25px;
+   & svg{
+   width:150px;
+   height:40px;
+   }
     }
 `
 
