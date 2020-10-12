@@ -24,27 +24,27 @@ export const projects = [
             en:"In the process of learning, a person has to write a lot of information into a notebook, but groWitHead is more than a notebook. Here you can create folders with individual disciplines that can be categorized into which blocks of text can be added. There is also a task scheduler in the application. In the future I plan to write a backend for it."
         }
     },
-    {
-        name: "tetris",
-        id: 3,
-        color: "#843DC4",
-        link: "https://valikminak.github.io/Tetris/",
-        image:"https://res.cloudinary.com/minak/image/upload/v1600768041/Portfolio/tetris_afpyyl.png",
-        text: {
-            ru:"Тетрис называют дзен-игрой: в ней не нужно ни с кем воевать, не нужно никуда бежать. Все фигуры, которые тебе удалось расположить красиво и правильно, сгорают. Игра может быть очень долгой, а может оборваться от случайной ошибки.",
-            en:"Tetris is called a Zen game: you don't need to fight with anyone, you don't need to run anywhere. All the figures that you managed to arrange nicely and correctly burn out. The game can be very long, or it can be cut short by an accidental mistake."
-        }
-    },
-    {
-        name: "sudoku",
-        id: 4,
-        color: "#a0e9fd",
-        link: "https://valikminak.github.io/Sudoku/",
-        image:"https://res.cloudinary.com/minak/image/upload/v1600768041/Portfolio/sudoku_pi8iyc.png",
-        text: {
-            ru:"\n" +
-                " Если перевести с японского языка, то судоку означает: «цифра, стоящая отдельно». Некоторые называют игру «магическим квадратом». Число комбинаций в этой игре состаляет 47 784 725 839 872 000 = (9!)³.",
-            en:"Translated from Japanese, Sudoku means \"a figure standing alone.\" Some people call the game \"magic square\". The number of combinations in this game is 47 784 725 839 872 000 = (9!) ³."
-        }
-    }
+    // {
+    //     name: "tetris",
+    //     id: 3,
+    //     color: "#843DC4",
+    //     link: "https://valikminak.github.io/Tetris/",
+    //     image:"https://res.cloudinary.com/minak/image/upload/v1600768041/Portfolio/tetris_afpyyl.png",
+    //     text: {
+    //         ru:"Тетрис называют дзен-игрой: в ней не нужно ни с кем воевать, не нужно никуда бежать. Все фигуры, которые тебе удалось расположить красиво и правильно, сгорают. Игра может быть очень долгой, а может оборваться от случайной ошибки.",
+    //         en:"Tetris is called a Zen game: you don't need to fight with anyone, you don't need to run anywhere. All the figures that you managed to arrange nicely and correctly burn out. The game can be very long, or it can be cut short by an accidental mistake."
+    //     }
+    // },
+    // {
+    //     name: "sudoku",
+    //     id: 4,
+    //     color: "#a0e9fd",
+    //     link: "https://valikminak.github.io/Sudoku/",
+    //     image:"https://res.cloudinary.com/minak/image/upload/v1600768041/Portfolio/sudoku_pi8iyc.png",
+    //     text: {
+    //         ru:"\n" +
+    //             " Если перевести с японского языка, то судоку означает: «цифра, стоящая отдельно». Некоторые называют игру «магическим квадратом». Число комбинаций в этой игре состаляет 47 784 725 839 872 000 = (9!)³.",
+    //         en:"Translated from Japanese, Sudoku means \"a figure standing alone.\" Some people call the game \"magic square\". The number of combinations in this game is 47 784 725 839 872 000 = (9!) ³."
+    //     }
+    // }
 ]
